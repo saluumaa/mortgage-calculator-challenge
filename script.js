@@ -15,18 +15,9 @@
       checkedRadioButtons(principal, years, interestRate);
         
     });
+ 
 
-    calculatorForm.addEventListener("keydown", (event)=> {
-        if(event.key = 'Enter'){
-            event.preventDefault();
-          calculatorForm.submit();
-        }
-    })
-
-  
-    
-
-function checkedRadioButtons(principal, years, interestRate) {
+ function checkedRadioButtons(principal, years, interestRate) {
     let monthlyPayment, totalRepayment;
     let monthlyInterestRate = interestRate / 100 / 12; 
     let numberOfPayments = years * 12;
